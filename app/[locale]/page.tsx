@@ -1,0 +1,15 @@
+import { LocalizedLink, useTranslations } from 'next-intl'
+
+export default function Index() {
+  const t = useTranslations('index')
+  return (
+    <>
+      <h1>{t('title')}</h1>
+      <LocalizedLink href="/" locale="es">Switch to Spanish</LocalizedLink>
+      <br />
+      <LocalizedLink href="/" locale="en">Switch to English</LocalizedLink>
+      <br />
+      <LocalizedLink href={`/second-page`}>Go to second page</LocalizedLink>
+    </>
+  )
+}
