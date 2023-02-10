@@ -17,6 +17,7 @@ export default function LocaleLayout({ children, params }: Props) {
 
   return (
     <html lang={locale}>
+      <head />
       <body>{children}</body>
     </html>
   );
