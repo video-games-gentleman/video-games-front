@@ -1,6 +1,7 @@
 import { useLocale } from 'next-intl';
 import { notFound } from 'next/navigation';
 import { ReactNode } from 'react';
+import { Header } from './components';
 
 type Props = {
   children: ReactNode;
@@ -17,7 +18,10 @@ export default function LocaleLayout({ children, params }: Props) {
 
   return (
     <html lang={locale}>
-      <body>{children}</body>
+      <body>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
