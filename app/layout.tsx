@@ -1,5 +1,5 @@
 import { useLocale } from 'next-intl'
-import './globals.css'
+import './tailwind-global.css'
 
 export default function RootLayout({
   children

@@ -5,7 +5,7 @@ export default function Index() {
 
   return (
     <>
-      <h1>{t('title')}</h1>
+      <h1 className='text-red-600'>{t('title')}</h1>
       <LocalizedLink href="/" locale="es">Switch to Spanish</LocalizedLink>
       <br />
       <LocalizedLink href="/" locale="en">Switch to English</LocalizedLink>
